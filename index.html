@@ -43,30 +43,13 @@
             <h2 class="mb-5">Celebrity Recognition API can recognize thousands of celebrities in a wide range of categories, such as entertainment and media, sports, business, and politics.</h2>
           </div>
 		  <div class="col-xl-6">
-          <form>
-	<div class="form-group">
-    <input type="text" class="form-control" placeholder="Enter Full Name" ng-model="user.name" required>
-	</div>
-    <div class="form-group">
-    <input type="text" class="form-control" placeholder="Enter Email" ng-model="user.email" required>
-	</div>
-      
-	 <div class="form-group">
-    <input type="text" class="form-control" placeholder="Enter Mobile Number" ng-model="user.mobile" required>
-	</div>
-            
-	<div class="form-group">
-    <input type="password" placeholder="Enter Password"  class="form-control"  ng-model="user.password" required>
-
-   </div>
-              
-    <div class="clearfix">
-	<br>
-      <button type="submit" id="register-submit-btn" class="btn btn-block btn-lg btn-primary" >Sign Up</button>
-     
-    </div>
-	<br>
-	</form>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "4822330",
+	formId: "491b12de-ad9d-4a25-9a7b-e8838f46cadf"
+});
+</script>
           </div>
           <!--<div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <form>
@@ -255,30 +238,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
   </body>
-  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-<script>
-  hbspt.forms.create({
-	portalId: "4822330",
-	formId: "5b332e5e-16b1-469f-9d7e-96a83b2789e1"
-});
-</script>
-<!--<script>
-var app = angular.module('myApp', []);
-app.controller('formCtrl', function($scope,$http) {
-    $scope.Register = function(user){
-	$http.get("http://66.42.48.226/register?name="+user.name+"&email="+user.email+"&mobile="+user.mobile+"&password="+user.password+"").then(function(response) {
-        $scope.myWelcome = response.data;
-		console.log($scope.myWelcome.Error);
-		if($scope.myWelcome.Error===false){
-		alert($scope.myWelcome.Message);
-		//window.location.href = 'https://www.celebrityrecognitionapi.com/';
-		}
-		else{
-		alert("Registration failed");
-		}
-		
-    });
-	};
-});
-</script>-->
+  
+ 
 </html>
