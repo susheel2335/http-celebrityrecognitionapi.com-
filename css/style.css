@@ -940,7 +940,7 @@ body.active-preloader-ovh {
   background: #1C2135 url(../img/banner-bg-4-1.png) left top no-repeat;
 }
 .banner-style-four .banner-content {
-  padding-top: 130px;
+ /* padding-top: 130px;*/
 }
 .banner-style-four .banner-content span {
   display: inline-block;
