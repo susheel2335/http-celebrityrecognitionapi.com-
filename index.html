@@ -379,7 +379,7 @@
 
             myNgApp.config(function (dropzoneOpsProvider) {
                 dropzoneOpsProvider.setOptions({
-                    url: 'http://66.42.48.226:5000',
+                    url: 'http://66.42.48.226/ImageUploadServlet',
                     acceptedFiles: 'image/jpeg, images/jpg, image/png',
                     addRemoveLinks: true,
                     dictDefaultMessage: 'Click to add or drop photos',
@@ -400,7 +400,7 @@
                         //console.info('File added from dropzone 1.', file);
                         console.log(file.upload.filename);
                         
-                        var uploadUrl = "http://66.42.48.226:5000";
+                        var uploadUrl = "http://66.42.48.226/ImageUploadServlet";
                         //fileUpload.uploadFileToUrl(file, uploadUrl);
 
                         var fd = new FormData();
@@ -413,13 +413,13 @@
                         })
                                 .success(function (res) {
                                     //$scope.message = res.face_found_in_image;
-				     $scope.message = res.Object;
+				     $scope.message = res.object;
 
                                     console.log($scope.message + "a");
                                 })
                                 .error(function (res) {
                                     //$scope.message = res.face_found_in_image;
-				     $scope.message = res.Object;
+				     $scope.message = res.object;
 	
                                     console.log($scope.message + "b");
                                 });
